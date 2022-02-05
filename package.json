@@ -3,5 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "devDependencies": {}
+  "scripts": {
+    "hard": "npx hardhat",
+    "hard:node": "yarn hard node",
+    "hard:compile": "yarn hard compile",
+    "hard:run": "yarn hard run --network localhost",
+    "hard:deploy": "yarn hard:run scripts/deploy.js",
+    "hard:console": "yarn hard console --network localhost",
+    "test": "yarn hard test"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@openzeppelin/contracts": "^4.4.2",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "chai": "^4.3.6",
+    "ethers": "^5.5.4",
+    "hardhat": "^2.8.3"
+  }
 }
